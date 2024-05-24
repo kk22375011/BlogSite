@@ -1,0 +1,214 @@
+/*-----------------------------------------------
+					ヘッダー
+------------------------------------------------*/
+header {
+
+	background-color: white;
+	height: 6rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	border-bottom: 1px solid black;
+}
+
+.pc {
+
+	display: block;
+	padding-top: 1.5rem;
+}
+
+.pc-inner {
+
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1rem;
+}
+
+.pc-logo {
+
+	display: flex;
+	text-align: center;
+	gap: 0 10px;
+	align-items: center;
+}
+
+.pc-logo img {
+
+	width: 10rem;
+	height: 2rem;
+}
+
+.pc-list {
+
+	display: flex;
+	align-items: center;
+	gap: 0 1.5rem;
+}
+
+.pc-list a {
+
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #594A4E;
+	font-family: Kiwi Maru;
+}
+
+.pc-list a:hover {
+
+	color: #F08080;
+}
+
+/*-----------------------------------------------
+						メイン
+------------------------------------------------*/
+body {
+
+	background-color: #696868;
+}
+
+main {
+
+	margin-top: 6rem;
+}
+
+img {
+
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+section {
+
+	width: 90%;
+	margin: 8rem auto;
+}
+
+/* ログインという文字の設定 */
+section h2 {
+
+	font-family: Kiwi Maru;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	color: ghostwhite;
+	line-height: 2rem;
+}
+
+table {
+
+	margin: 2.8rem auto;
+}
+
+th {
+
+	font-size: 1rem;
+	text-align: left;
+	padding: 0.6rem;
+}
+
+td {
+
+	padding: 1rem;
+	font-size: 1rem;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+input {
+
+	height: 1.5rem;
+}
+
+input[type="text"] {
+
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	border: none;
+	box-shadow: 0 0 0 1px #ccc inset;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-size: 1rem;
+	color: #594A4E;
+	font-family: Kiwi Maru;
+	width: 250px;
+	border-radius: 24px;
+	margin: 7px 0;
+}
+
+/* 入力している間 */
+input[type="text"]:focus {
+
+	outline: 0;
+	box-shadow: 0 0 0 2px #71c7c8 inset;
+	transform: scale(1.2);
+}
+
+input[type="password"] {
+
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	border: none;
+	box-shadow: 0 0 0 1px #ccc inset;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-size: 1rem;
+	color: #594A4E;
+	font-family: Kiwi Maru;
+	width: 250px;
+	border-radius: 24px;
+	margin: 7px 0;
+}
+
+/* 入力している間 */
+input[type="password"]:focus {
+
+	outline: 0;
+	box-shadow: 0 0 0 2px #71c7c8 inset;
+	transform: scale(1.2);
+}
+
+.submit-button {
+
+	text-align: center;
+	margin: 1.5rem auto;
+}
+
+/*-------- 登録ボタンの設定 --------*/
+.active_btn {
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 50px;
+	background: #6495ED;
+	color: #fff;
+	border: none;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px #aaa;
+	transition: all 0.3s;
+}
+
+.active_btn:disabled {
+	filter: brightness(0.8);
+	cursor: not-allowed;
+	box-shadow: 4px 4px 4px #aaa;
+}
+
+.active_btn:active {
+	&:not([disabled]) {
+		transform: translate(4px, 4px);
+		box-shadow: none;
+	}
+}
+
+.active_btn:hover {
+	&:not([disabled]) {
+		filter: brightness(1.2);
+	}
+}
